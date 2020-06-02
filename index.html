@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Vidgar - timer bossow & metinow">
+    <title>Vidgar - timer bossow & metinow</title>
+    <link rel='shortcut icon'
+          href='static/favicon.ico'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="static/styles.css">
+
+</head>
+
+
+<body>
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  Zezwól na powiadomienia żeby strona poprawnie działała. Jeżeli strona nie wyświetla się poprawnie , wyczyść cookies i pamięć podręczną, przeładuj strone.
+
+</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Vidgar - timer bossow & metinow</a>
+</nav>
+<img src="static/logo.png" class="center" alt="Vidgar"/>
+
+<main role="main" class="container">
+    <div class="col-xl timery">
+        <label for="sel1"><h4 style="color:white;">Wybierz bossa/metina:<h4> </label>
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <select class="form-control" id="bossControl">
+					<option>test dzwieku i powiadomienia 2 min przed</option>
+					<option disabled>+++ BOSSY +++</option>
+					<option>Dolina Orków</option>
+					<option>Pustynia</option>
+					<option disabled>--- Kraina Małp Bossy ---</option>
+					<option>Skalista Małpa</option>
+					<option>Chodząca Małpa</option>
+					<option>Lord Małp</option>
+					<option disabled>------</option>
+					<option>Góra Sohan</option>
+					<option>Piekło</option>
+					<option>Świątynia Hwang</option>
+					<option>Red las </option>
+                    <option>Red las (LEGENDA)</option>
+					<option>Loch V2</option>
+					<option>Grota AV1 (LEGENDA)</option>
+                    <option>Grota AV2 Generał Huashin(Losowy resp)</option>
+					<option>Grota AV2 Generał Yonghan </option>
+					<option>Mapa 90 </option>
+					<option>Mapa 90 (LEGENDA)</option>
+					<option>Mapa 100</option>
+                    <option disabled>+++ METINY +++</option>
+					<option>Dolina Metin</option>
+					<option>Pustynia Metin</option>
+					<option disabled>--- Kraina Małp Metiny ---</option>
+					<option>Łatwy Metin Małp</option>
+					<option>Metin Małp</option>
+					<option>Silny Metin Małp</option>
+					<option disabled>------</option>
+					<option>Góra Sohan Metin</option>
+					<option>Piekło Metin</option>
+					<option>Świątynia hwang Metin</option>
+					<option>Red las Metin</option>
+					<option>Loch V2 Metin</option>
+					<option>Grota AV2 Metin</option>
+					<option>Mapa 90 Metin</option>
+					<option>Mapa 100 Metin</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                <button class="btn btn-danger float-right btnresetall" >Zresetuj wszystko</button>
+            </div>
+        </div>
+		<!--<div>
+		
+		</div> -->
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body boss">
+                    <h4 class="card-title"><span class="bossName"></span> - CH1</h4>
+                    <span class="timer">--:--</span> <br/><br/>
+                    <button class="btn btn-primary btnon">Przełącz</button>
+                    <button class="btn btn-warning btnreset">Zresetuj</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body boss">
+                    <h4 class="card-title"><span class="bossName"></span> - CH2</h4>
+                    <span class="timer">--:--</span> <br/><br/>
+                    <button class="btn btn-primary btnon">Przełącz</button>
+                    <button class="btn btn-warning btnreset">Zresetuj</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body boss">
+                    <h4 class="card-title"><span class="bossName"></span> - CH3</h4>
+                    <span class="timer">--:--</span> <br/><br/>
+                    <button class="btn btn-primary btnon">Przełącz</button>
+                    <button class="btn btn-warning btnreset">Zresetuj</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body boss">
+                    <h4 class="card-title"><span class="bossName"></span> - CH4</h4>
+                    <span class="timer">--:--</span> <br/><br/>
+                    <button class="btn btn-primary btnon">Przełącz</button>
+                    <button class="btn btn-warning btnreset">Zresetuj</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body boss">
+                    <h4 class="card-title"><span class="bossName"></span> - CH5</h4>
+                    <span class="timer">--:--</span> <br/><br/>
+                    <button class="btn btn-primary btnon">Przełącz</button>
+                    <button class="btn btn-warning btnreset">Zresetuj</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body boss">
+                    <h4 class="card-title"><span class="bossName"></span> - CH6</h4>
+                    <span class="timer">--:--</span> <br/><br/>
+                    <button class="btn btn-primary btnon">Przełącz</button>
+                    <button class="btn btn-warning btnreset">Zresetuj</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body boss">
+                    <h4 class="card-title"><span class="bossName"></span> - CH7</h4>
+                    <span class="timer">--:--</span> <br/><br/>
+                    <button class="btn btn-primary btnon">Przełącz</button>
+                    <button class="btn btn-warning btnreset">Zresetuj</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body boss">
+                    <h4 class="card-title"><span class="bossName"></span> - CH8</h4>
+                    <span class="timer">--:--</span> <br/><br/>
+                    <button class="btn btn-primary btnon">Przełącz</button>
+                    <button class="btn btn-warning btnreset">Zresetuj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="static/zegarek.js"></script>
+</body>
+</html>

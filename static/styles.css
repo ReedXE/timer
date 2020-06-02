@@ -1,0 +1,48 @@
+.timer{
+    color: #6abf40;
+}
+
+.card-group{
+    margin: 5px;
+}
+
+body {
+	font-family:"Lucida Sans Unicode", sans-serif;
+	background:url("background.jpg") top center no-repeat;
+	background-color:#16110f;
+	min-height:100vh;
+	overflow-x:hidden;
+	font-size:13px;
+
+}
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* Red */
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
